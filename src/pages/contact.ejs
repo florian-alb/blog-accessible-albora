@@ -4,32 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les singeries - Page d'accueil</title>
-    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-<header class="bg-gray-800 text-white p-4" aria-label="En-tête">
+
+<header class="bg-green-950 text-white p-4" aria-label="En-tête">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
 
         <a href="/" aria-label="Retour à la page d'accueil">
-            <img src="../assets/loogo-singe-blanc.svg" alt="Logo" class="w-72 h-auto">
+            <img src="/assets/loogo-singe-blanc.svg" alt="Logo" class="w-72 h-auto">
         </a>
 
         <nav aria-label="Navigation principale">
             <ul class="flex space-x-4">
-                <li><a href="/" class="text-white hover:text-gray-300" aria-label="Aller à la page d'accueil">Home</a>
+                <li><a href="/" class="text-white hover:text-gray-300" aria-label="Aller à la page d'accueil">Accueil</a>
                 </li>
                 <li><a href="/blog" class="text-white hover:text-gray-300" aria-label="Lire notre blog">Blog</a></li>
-                <li><a href="/a-propos" class="text-white hover:text-gray-300"
-                       aria-label="En savoir plus à propos de nous">À propos</a></li>
                 <li><a href="/contact" class="text-white hover:text-gray-300" aria-label="Nous contacter">Contact</a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
-
 
 <section class="bg-gray-200 py-8">
     <div class="container mx-auto px-4">
@@ -56,20 +54,17 @@
     </div>
 </section>
 
-
-
-<footer class="bg-gray-800 p-4">
+<footer class="bg-green-950 p-4">
     <div class="max-w-6xl mx-auto flex flex-wrap justify-between">
         <div>
-            <img src="../assets/loogo-singe-blanc.svg" alt="Logo" class="w-full">
+            <img src="/assets/loogo-singe-blanc.svg" alt="Logo" class="w-full">
         </div>
 
         <nav aria-label="Footer navigation">
             <ul class="space-y-2">
-                <li><a href="/" class="text-white hover:text-gray-300">Home</a></li>
-                <li><a href="/blog" class="text-white hover:text-gray-300">Blog</a></li>
-                <li><a href="/a-propos" class="text-white hover:text-gray-300">À propos</a></li>
-                <li><a href="/contact" class="text-white hover:text-gray-300">Contact</a></li>
+                <li><a aria-label="accueil" href="/" class="text-white hover:text-gray-300">Accueil</a></li>
+                <li><a aria-label="blog" href="/blog" class="text-white hover:text-gray-300">Blog</a></li>
+                <li><a aria-label="contact" href="/contact" class="text-white hover:text-gray-300">Contact</a></li>
             </ul>
         </nav>
 
@@ -79,7 +74,7 @@
                 <label class="text-white" for="email-newsletter">Adresse email</label>
                 <input type="email" id="email-newsletter" name="email" placeholder="singe@email.com"
                        class="p-2 rounded text-black" required>
-                <button type="submit" class="p-2 bg-blue-500 rounded hover:bg-blue-600 text-white">S'abonner</button>
+                <button type="submit" class="p-2 bg-green-500 rounded hover:bg-blue-600 text-black">S'abonner</button>
             </form>
         </div>
     </div>

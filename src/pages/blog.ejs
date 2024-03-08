@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Les singeries - Blog</title>
-    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="/css/output.css">
 </head>
 <body>
-<header class="bg-gray-800 text-white p-4" aria-label="En-tête">
+
+<header class="bg-green-950 text-white p-4" aria-label="En-tête">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
 
         <a href="/" aria-label="Retour à la page d'accueil">
-            <img src="../assets/loogo-singe-blanc.svg" alt="Logo" class="w-72 h-auto">
+            <img src="/assets/loogo-singe-blanc.svg" alt="Logo" class="w-72 h-auto">
         </a>
 
         <nav aria-label="Navigation principale">
             <ul class="flex space-x-4">
-                <li><a href="/" class="text-white hover:text-gray-300" aria-label="Aller à la page d'accueil">Home</a>
+                <li><a href="/" class="text-white hover:text-gray-300" aria-label="Aller à la page d'accueil">Accueil</a>
                 </li>
                 <li><a href="/blog" class="text-white hover:text-gray-300" aria-label="Lire notre blog">Blog</a></li>
-                <li><a href="/a-propos" class="text-white hover:text-gray-300"
-                       aria-label="En savoir plus à propos de nous">À propos</a></li>
                 <li><a href="/contact" class="text-white hover:text-gray-300" aria-label="Nous contacter">Contact</a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
+
 <section class="bg-gray-200 py-8">
     <div class="container mx-auto px-4">
         <h1 class="text-5xl font-bold mb-6 text-center">Les Singeries: Le blog</h1>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 
             <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="../assets/blog/singe_golmon.png" alt="singe drole">
+                <img class="w-full" src="/assets/blog/singe_golmon.png" alt="singe drole">
                 <div class="px-6 py-4">
                     <h3 class="font-bold text-xl mb-2">Quand un singe utilise Tinder</h3>
                     <p class="text-gray-700 text-base">
@@ -46,7 +46,7 @@
 
 
             <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="../assets/blog/singe_penseur.png" alt="singe penseur">
+                <img class="w-full" src="/assets/blog/singe_penseur.png" alt="singe penseur">
                 <div class="px-6 py-4">
                     <h3 class="font-bold text-xl mb-2">Le singe qui a lancé une startup</h3>
                     <p class="text-gray-700 text-base">
@@ -60,7 +60,7 @@
 
 
             <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="../assets/blog/singe_selfie.png" alt="singe selfie">
+                <img class="w-full" src="/assets/blog/singe_selfie.png" alt="singe selfie">
                 <div class="px-6 py-4">
                     <h3 class="font-bold text-xl mb-2">Singes vs Réseaux Sociaux</h3>
                     <p class="text-gray-700 text-base">
@@ -74,7 +74,7 @@
 
 
             <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="../assets/blog/singe_pc.png" alt="singe PC">
+                <img class="w-full" src="/assets/blog/singe_pc.png" alt="singe PC">
                 <div class="px-6 py-4">
                     <h3 class="font-bold text-xl mb-2">Le singe qui a appris à coder</h3>
                     <p class="text-gray-700 text-base">
@@ -88,7 +88,7 @@
 
 
             <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="../assets/blog/singe_chest.png" alt="singe echecs">
+                <img class="w-full" src="/assets/blog/singe_chest.png" alt="singe echecs">
                 <div class="px-6 py-4">
                     <h3 class="font-bold text-xl mb-2">Le jour où un singe a battu un grand maître d'échecs</h3>
                     <p class="text-gray-700 text-base">
@@ -102,7 +102,7 @@
 
 
             <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="../assets/blog/singe_roi.png" alt="le roi des singes">
+                <img class="w-full" src="/assets/blog/singe_roi.png" alt="le roi des singes">
                 <div class="px-6 py-4">
                     <h3 class="font-bold text-xl mb-2">Singes influents : Qui sont-ils ?</h3>
                     <p class="text-gray-700 text-base">
@@ -117,18 +117,18 @@
         </div>
     </div>
 </section>
-<footer class="bg-gray-800 p-4">
+
+<footer class="bg-green-950 p-4">
     <div class="max-w-6xl mx-auto flex flex-wrap justify-between">
         <div>
-            <img src="../assets/loogo-singe-blanc.svg" alt="Logo" class="w-full">
+            <img src="/assets/loogo-singe-blanc.svg" alt="Logo" class="w-full">
         </div>
 
         <nav aria-label="Footer navigation">
             <ul class="space-y-2">
-                <li><a href="/" class="text-white hover:text-gray-300">Home</a></li>
-                <li><a href="/blog" class="text-white hover:text-gray-300">Blog</a></li>
-                <li><a href="/a-propos" class="text-white hover:text-gray-300">À propos</a></li>
-                <li><a href="/contact" class="text-white hover:text-gray-300">Contact</a></li>
+                <li><a aria-label="accueil" href="/" class="text-white hover:text-gray-300">Accueil</a></li>
+                <li><a aria-label="blog" href="/blog" class="text-white hover:text-gray-300">Blog</a></li>
+                <li><a aria-label="contact" href="/contact" class="text-white hover:text-gray-300">Contact</a></li>
             </ul>
         </nav>
 
@@ -138,7 +138,7 @@
                 <label class="text-white" for="email-newsletter">Adresse email</label>
                 <input type="email" id="email-newsletter" name="email" placeholder="singe@email.com"
                        class="p-2 rounded text-black" required>
-                <button type="submit" class="p-2 bg-blue-500 rounded hover:bg-blue-600 text-white">S'abonner</button>
+                <button type="submit" class="p-2 bg-green-500 rounded hover:bg-blue-600 text-black">S'abonner</button>
             </form>
         </div>
     </div>
@@ -146,5 +146,6 @@
         <p>Un blog marrant sur les singes</p>
     </div>
 </footer>
+
 </body>
 </html>

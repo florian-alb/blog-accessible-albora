@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les singeries - Page d'accueil</title>
-    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
+
 <header class="bg-green-950 text-white p-4" aria-label="En-tête">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
 
         <a href="/" aria-label="Retour à la page d'accueil">
-            <img src="../assets/loogo-singe-blanc.svg" alt="Logo" class="w-72 h-auto">
+            <img src="/assets/loogo-singe-blanc.svg" alt="Logo" class="w-72 h-auto">
         </a>
 
         <nav aria-label="Navigation principale">
             <ul class="flex space-x-4">
-                <li><a href="/" class="text-white hover:text-gray-300" aria-label="Aller à la page d'accueil">Home</a>
+                <li><a href="/" class="text-white hover:text-gray-300" aria-label="Aller à la page d'accueil">Accueil</a>
                 </li>
                 <li><a href="/blog" class="text-white hover:text-gray-300" aria-label="Lire notre blog">Blog</a></li>
-                <li><a href="/a-propos" class="text-white hover:text-gray-300"
-                       aria-label="En savoir plus à propos de nous">À propos</a></li>
                 <li><a href="/contact" class="text-white hover:text-gray-300" aria-label="Nous contacter">Contact</a>
                 </li>
             </ul>
@@ -34,19 +33,19 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide flex justify-center items-center text-center text-lg bg-white" role="group"
              aria-roledescription="slide" aria-label="Slide 1">
-            <img class="h-1/2 w-full" src="../assets/singe-1.png" alt="image de singe 1">
+            <img class="h-1/2 w-full" src="/assets/singe-1.png" alt="image de singe 1">
         </div>
         <div class="swiper-slide flex justify-center items-center text-center text-lg bg-white" role="group"
              aria-roledescription="slide" aria-label="Slide 2">
-            <img class="w-full" src="../assets/singe-2.png" alt="image de singe 2">
+            <img class="w-full" src="/assets/singe-2.png" alt="image de singe 2">
         </div>
         <div class="swiper-slide flex justify-center items-center text-center text-lg bg-white" role="group"
              aria-roledescription="slide" aria-label="Slide 3">
-            <img class="h-1/2 w-full" src="../assets/singe-3.png" alt="image de singe 3">
+            <img class="h-1/2 w-full" src="/assets/singe-3.png" alt="image de singe 3">
         </div>
     </div>
     <div class="swiper-pagination" role="navigation" aria-label="Pagination"></div>
-    <div class="swiper-button-next" role="button" aria-controls="mySwiper" aria-label="Next slide"></div>
+    <div class="swiper-button-next text-white" role="button" aria-controls="mySwiper" aria-label="Next slide"></div>
     <div class="swiper-button-prev" role="button" aria-controls="mySwiper" aria-label="Previous slide"></div>
 </div>
 
@@ -73,17 +72,23 @@
     <div class="flex flex-wrap -mx-4 p-4 rounded bg-green-950 text-white justify-center">
         <div class="w-full md:w-1/2 px-4">
             <h2 class="text-2xl font-bold mb-4">Petite vidéo à la cool</h2>
-            <p>
-                Voici une petite vidéo retranscrite pour les mal entandants sur les singes. Apréciez la vie.
-            </p>
+            <p class="mb-6">Voici une petite vidéo retranscrite pour les malentendants sur les singes. Appréciez la vie. Apprécie chaque instant.</p>
+
+            <span id="openDrawer" class="text-white hover:text-green-200 underline mb-4 font-xs">
+                Ouvrir la transcription
+            </span>
+
         </div>
         <div class="w-full md:w-1/2 px-4">
             <div class="responsive-iframe rounded">
                 <iframe
                         title="video singes sexuelle"
-                        class="w-full rounded" style="height: 300px;" src="../assets/Bonobos-libres.mp4" frameborder="0"
+                        class="w-full rounded" style="height: 300px;"
+                        src="/assets/Bonobos-libres.mp4"
+                        loading="lazy"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen
+                ></iframe>
             </div>
         </div>
     </div>
@@ -137,7 +142,7 @@
 <footer class="bg-green-950 p-4">
     <div class="max-w-6xl mx-auto flex flex-wrap justify-between">
         <div>
-            <img src="../assets/loogo-singe-blanc.svg" alt="Logo" class="w-full">
+            <img src="/assets/loogo-singe-blanc.svg" alt="Logo" class="w-full">
         </div>
 
         <nav aria-label="Footer navigation">
@@ -189,6 +194,19 @@
             lastSlideMessage: 'Ceci est le dernier slide',
             paginationBulletMessage: 'Aller au slide {{index}}',
         },
+    });
+
+
+    const openDrawerBtn = document.getElementById('openDrawer');
+    const closeDrawerBtn = document.getElementById('closeDrawer');
+    const drawer = document.getElementById('drawer');
+
+    openDrawerBtn.addEventListener('click', () => {
+        drawer.classList.remove('hidden');
+    });
+
+    closeDrawerBtn.addEventListener('click', () => {
+        drawer.classList.add('hidden');
     });
 </script>
 </body>
