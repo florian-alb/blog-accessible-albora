@@ -19,7 +19,8 @@
 
         <nav aria-label="Navigation principale">
             <ul class="flex space-x-4">
-                <li><a href="/" class="text-white hover:text-gray-300" aria-label="Aller à la page d'accueil">Accueil</a>
+                <li><a href="/" class="text-white hover:text-gray-300"
+                       aria-label="Aller à la page d'accueil">Accueil</a>
                 </li>
                 <li><a href="/blog" class="text-white hover:text-gray-300" aria-label="Lire notre blog">Blog</a></li>
                 <li><a href="/contact" class="text-white hover:text-gray-300" aria-label="Nous contacter">Contact</a>
@@ -29,25 +30,33 @@
     </div>
 </header>
 
-<div class="swiper mySwiper h-full" role="region" aria-roledescription="carousel" aria-label="Gallery">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide flex justify-center items-center text-center text-lg bg-white" role="group"
-             aria-roledescription="slide" aria-label="Slide 1">
-            <img class="h-1/2 w-full" src="/assets/singe-1.png" alt="image de singe 1">
+<section>
+    <div class="swiper mySwiper h-full" role="region" aria-roledescription="carousel" aria-label="Gallery">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide flex justify-center items-center text-center text-lg bg-white" role="group"
+                 aria-roledescription="slide" aria-label="Slide 1">
+                <img class="h-1/2 w-full" src="/assets/singe-1.png" alt="image de singe 1">
+            </div>
+            <div class="swiper-slide flex justify-center items-center text-center text-lg bg-white" role="group"
+                 aria-roledescription="slide" aria-label="Slide 2">
+                <img class="w-full" src="/assets/singe-2.png" alt="image de singe 2">
+            </div>
+            <div class="swiper-slide flex justify-center items-center text-center text-lg bg-white" role="group"
+                 aria-roledescription="slide" aria-label="Slide 3">
+                <img class="h-1/2 w-full" src="/assets/singe-3.png" alt="image de singe 3">
+            </div>
         </div>
-        <div class="swiper-slide flex justify-center items-center text-center text-lg bg-white" role="group"
-             aria-roledescription="slide" aria-label="Slide 2">
-            <img class="w-full" src="/assets/singe-2.png" alt="image de singe 2">
-        </div>
-        <div class="swiper-slide flex justify-center items-center text-center text-lg bg-white" role="group"
-             aria-roledescription="slide" aria-label="Slide 3">
-            <img class="h-1/2 w-full" src="/assets/singe-3.png" alt="image de singe 3">
-        </div>
+        <div class="swiper-pagination" role="navigation" aria-label="Pagination"></div>
+        <div class="swiper-button-next text-white" role="button" aria-controls="mySwiper" aria-label="Next slide"></div>
+        <div class="swiper-button-prev" role="button" aria-controls="mySwiper" aria-label="Previous slide"></div>
     </div>
-    <div class="swiper-pagination" role="navigation" aria-label="Pagination"></div>
-    <div class="swiper-button-next text-white" role="button" aria-controls="mySwiper" aria-label="Next slide"></div>
-    <div class="swiper-button-prev" role="button" aria-controls="mySwiper" aria-label="Previous slide"></div>
-</div>
+
+    <style>
+        .swiper-pagination-bullet{background: white!important;}
+        .swiper-pagination-bullet.swiper-pagination-bullet-active{background: green!important;}
+        .swiper-button-next, .swiper-button-prev {color: white}
+    </style>
+</section>
 
 <section class="py-12 px-4">
     <div class="container mx-auto text-center">
@@ -72,9 +81,11 @@
     <div class="flex flex-wrap -mx-4 p-4 rounded bg-green-950 text-white justify-center">
         <div class="w-full md:w-1/2 px-4">
             <h2 class="text-2xl font-bold mb-4">Petite vidéo à la cool</h2>
-            <p class="mb-6">Voici une petite vidéo retranscrite pour les malentendants sur les singes. Appréciez la vie. Apprécie chaque instant.</p>
+            <p class="mb-6">Voici une petite vidéo retranscrite pour les malentendants sur les singes. Appréciez la vie.
+                Apprécie chaque instant.</p>
 
-            <a href="/assets/transcript-video.pdf" download class="text-green underline cursor-pointer hover:text-gray-300">
+            <a href="/assets/transcript-video.pdf" download
+               class="text-green underline cursor-pointer hover:text-gray-300">
                 <p>Télécharger la transcription (PDF)</p>
             </a>
 
