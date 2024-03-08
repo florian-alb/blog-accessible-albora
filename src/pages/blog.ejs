@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Les singeries - Blog</title>
     <link rel="stylesheet" href="/css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          rel="stylesheet"/>
 </head>
 <body>
 
@@ -16,7 +18,8 @@
 
         <nav aria-label="Navigation principale">
             <ul class="flex space-x-4">
-                <li><a href="/" class="text-white hover:text-gray-300" aria-label="Aller à la page d'accueil">Accueil</a>
+                <li><a href="/" class="text-white hover:text-gray-300"
+                       aria-label="Aller à la page d'accueil">Accueil</a>
                 </li>
                 <li><a href="/blog" class="text-white hover:text-gray-300" aria-label="Lire notre blog">Blog</a></li>
                 <li><a href="/contact" class="text-white hover:text-gray-300" aria-label="Nous contacter">Contact</a>
@@ -31,86 +34,135 @@
         <h1 class="text-5xl font-bold mb-6 text-center">Les Singeries: Le blog</h1>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-            <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="/assets/blog/singe_golmon.png" alt="singe drole">
-                <div class="px-6 py-4">
-                    <h3 class="font-bold text-xl mb-2">Quand un singe utilise Tinder</h3>
-                    <p class="text-gray-700 text-base">
-                        Imaginez un singe qui découvre Tinder. Ses selfies ? Des chefs-d'œuvre avec des bananes. Sa bio ? 'Juste ici pour voler ton cœur (et tes snacks).' Les rendez-vous se passent dans des arbres et la seule chose qu'il ghost, c'est les gardiens du zoo.
-                    </p>
+            <article class="bg-white rounded overflow-hidden shadow-lg flex-col flex justify-between">
+                <div>
+                    <img class="w-full" src="/assets/blog/singe_golmon.png" alt="singe drole">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Quand un singe utilise Tinder</h3>
+                        <p class="text-gray-700 text-base">
+                            Imaginez un singe qui découvre Tinder. Ses selfies ? Des chefs-d'œuvre avec des bananes. Sa
+                            bio
+                            ? 'Juste ici pour voler ton cœur (et tes snacks).' Les rendez-vous se passent dans des
+                            arbres et
+                            la seule chose qu'il ghost, c'est les gardiens du zoo.
+                        </p>
+                    </div>
                 </div>
-                <div class="px-6 pt-4 pb-2">
-                    <!-- Les commentaires ou d'autres éléments peuvent être ajoutés ici -->
-                </div>
-            </article>
-
-
-            <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="/assets/blog/singe_penseur.png" alt="singe penseur">
-                <div class="px-6 py-4">
-                    <h3 class="font-bold text-xl mb-2">Le singe qui a lancé une startup</h3>
-                    <p class="text-gray-700 text-base">
-                        Un singe a décidé de lancer sa startup : BananApp, une application révolutionnaire pour échanger des bananes. Pitch aux investisseurs ? Un simple cri. Le code vestimentaire ? Poilu chic. Son premier employé ? Un perroquet comme directeur marketing.
-                    </p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <!-- Les commentaires ou d'autres éléments peuvent être ajoutés ici -->
+                <div class="px-6 pt-4 pb-2 self-end">
+                    <button class="like-button flex items-center space-x-2 text-green-950 hover:text-blue-600">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="like-count">0</span>
+                    </button>
                 </div>
             </article>
 
 
-            <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="/assets/blog/singe_selfie.png" alt="singe selfie">
-                <div class="px-6 py-4">
-                    <h3 class="font-bold text-xl mb-2">Singes vs Réseaux Sociaux</h3>
-                    <p class="text-gray-700 text-base">
-                        Les singes ont pris d'assaut les réseaux sociaux. Leur contenu ? Des vines (littéralement). Leur challenge préféré ? Le Banana Flip Challenge. Leur hashtag tendance ? #PrimateLife. Instagram est confus, TikTok est impressionné.
-                    </p>
+            <article class="bg-white rounded overflow-hidden shadow-lg flex-col flex justify-between">
+                <div>
+                    <img class="w-full" src="/assets/blog/singe_penseur.png" alt="singe penseur">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Le singe qui a lancé une startup</h3>
+                        <p class="text-gray-700 text-base">
+                            Un singe a décidé de lancer sa startup : BananApp, une application révolutionnaire pour
+                            échanger
+                            des bananes. Pitch aux investisseurs ? Un simple cri. Le code vestimentaire ? Poilu chic.
+                            Son
+                            premier employé ? Un perroquet comme directeur marketing.
+                        </p>
+                    </div>
                 </div>
-                <div class="px-6 pt-4 pb-2">
-                    <!-- Les commentaires ou d'autres éléments peuvent être ajoutés ici -->
-                </div>
-            </article>
-
-
-            <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="/assets/blog/singe_pc.png" alt="singe PC">
-                <div class="px-6 py-4">
-                    <h3 class="font-bold text-xl mb-2">Le singe qui a appris à coder</h3>
-                    <p class="text-gray-700 text-base">
-                        Un singe s'est mis au codage et a créé 'MonkeyScript', un langage de programmation qui transforme toute erreur en une photo de banane. Les bugs ? Des cacahuètes virtuelles. Son premier projet ? Un site de critique de zoo.
-                    </p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                    <!-- Les commentaires ou d'autres éléments peuvent être ajoutés ici -->
+                <div class="px-6 pt-4 pb-2 self-end">
+                    <button class="like-button flex items-center space-x-2 text-green-950 hover:text-blue-600">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="like-count">0</span>
+                    </button>
                 </div>
             </article>
 
 
-            <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="/assets/blog/singe_chest.png" alt="singe echecs">
-                <div class="px-6 py-4">
-                    <h3 class="font-bold text-xl mb-2">Le jour où un singe a battu un grand maître d'échecs</h3>
-                    <p class="text-gray-700 text-base">
-                        Un singe a défié un grand maître d'échecs. Sa stratégie ? Faire des grimaces jusqu'à ce que l'adversaire soit distrait. Le coup de grâce ? Un mouvement illégal : le saut de l'orang-outan. L'issue ? Un match nul, car le singe a mangé les pièces.
-                    </p>
+            <article class="bg-white rounded overflow-hidden shadow-lg flex-col flex justify-between">
+                <div>
+                    <img class="w-full" src="/assets/blog/singe_selfie.png" alt="singe selfie">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Singes vs Réseaux Sociaux</h3>
+                        <p class="text-gray-700 text-base">
+                            Les singes ont pris d'assaut les réseaux sociaux. Leur contenu ? Des vines (littéralement).
+                            Leur
+                            challenge préféré ? Le Banana Flip Challenge. Leur hashtag tendance ? #PrimateLife.
+                            Instagram
+                            est confus, TikTok est impressionné.
+                        </p>
+                    </div>
                 </div>
-                <div class="px-6 pt-4 pb-2">
-                    <!-- Les commentaires ou d'autres éléments peuvent être ajoutés ici -->
+                <div class="px-6 pt-4 pb-2 self-end">
+                    <button class="like-button flex items-center space-x-2 text-green-950 hover:text-blue-600">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="like-count">0</span>
+                    </button>
                 </div>
             </article>
 
 
-            <article class="bg-white rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="/assets/blog/singe_roi.png" alt="le roi des singes">
-                <div class="px-6 py-4">
-                    <h3 class="font-bold text-xl mb-2">Singes influents : Qui sont-ils ?</h3>
-                    <p class="text-gray-700 text-base">
-                        Les singes influents de cette année incluent : Bananaman, le premier à ouvrir un blog de mode pour primates ; MonkeyPaw, un critique culinaire spécialisé dans les fruits exotiques ; et SwingVlogger, un aventurier qui partage ses parcours d'obstacles dans la jungle.
-                    </p>
+            <article class="bg-white rounded overflow-hidden shadow-lg flex-col flex justify-between">
+                <div>
+                    <img class="w-full" src="/assets/blog/singe_pc.png" alt="singe PC">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Le singe qui a appris à coder</h3>
+                        <p class="text-gray-700 text-base">
+                            Un singe s'est mis au codage et a créé 'MonkeyScript', un langage de programmation qui
+                            transforme toute erreur en une photo de banane. Les bugs ? Des cacahuètes virtuelles. Son
+                            premier projet ? Un site de critique de zoo.
+                        </p>
+                    </div>
                 </div>
-                <div class="px-6 pt-4 pb-2">
-                    <!-- Les commentaires ou d'autres éléments peuvent être ajoutés ici -->
+                <div class="px-6 pt-4 pb-2 self-end">
+                    <button class="like-button flex items-center space-x-2 text-green-950 hover:text-blue-600">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="like-count">0</span>
+                    </button>
+                </div>
+            </article>
+
+
+            <article class="bg-white rounded overflow-hidden shadow-lg flex-col flex justify-between">
+                <div>
+                    <img class="w-full" src="/assets/blog/singe_chest.png" alt="singe echecs">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Le jour où un singe a battu un grand maître d'échecs</h3>
+                        <p class="text-gray-700 text-base">
+                            Un singe a défié un grand maître d'échecs. Sa stratégie ? Faire des grimaces jusqu'à ce que
+                            l'adversaire soit distrait. Le coup de grâce ? Un mouvement illégal : le saut de
+                            l'orang-outan.
+                            L'issue ? Un match nul, car le singe a mangé les pièces.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pt-4 pb-2 self-end">
+                    <button class="like-button flex items-center space-x-2 text-green-950 hover:text-blue-600">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="like-count">0</span>
+                    </button>
+                </div>
+            </article>
+
+
+            <article class="bg-white rounded overflow-hidden shadow-lg flex-col flex justify-between">
+                <div>
+                    <img class="w-full" src="/assets/blog/singe_roi.png" alt="le roi des singes">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Singes influents : Qui sont-ils ?</h3>
+                        <p class="text-gray-700 text-base">
+                            Les singes influents de cette année incluent : Bananaman, le premier à ouvrir un blog de
+                            mode pour primates ; MonkeyPaw, un critique culinaire spécialisé dans les fruits exotiques ;
+                            et SwingVlogger, un aventurier qui partage ses parcours d'obstacles dans la jungle.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-6 pt-4 pb-2 self-end">
+                    <button class="like-button flex items-center space-x-2 text-green-950 hover:text-blue-600">
+                        <span class="material-symbols-outlined">thumb_up</span>
+                        <span class="like-count">0</span>
+                    </button>
                 </div>
             </article>
 
@@ -146,6 +198,21 @@
         <p>Un blog marrant sur les singes</p>
     </div>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const likeButtons = document.querySelectorAll('.like-button');
+        likeButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const likeCountSpan = this.querySelector('.like-count');
+                const likeCount = parseInt(likeCountSpan.textContent, 10);
+                likeCountSpan.textContent = likeCount + 1;
+                this.querySelector('.material-symbols-outlined').textContent = 'thumb_up';
+            });
+        });
+    });
+</script>
+
 
 </body>
 </html>
